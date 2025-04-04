@@ -1,0 +1,123 @@
+
+  .queryPanel {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: var(--card-text);
+    
+    font-size: 1.05rem;
+    line-height: 1.6;
+      
+  }
+  
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .navButton {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: var(--card-bg);
+    color: var(--card-text);
+    border: 2px solid var(--border-color);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: box-shadow 0.2s ease;
+  }
+  
+  .navButton:hover {
+    box-shadow: 4px 4px 0 0 var(--shadow-color);
+  }
+  
+  .activeButton {
+    background-color: var(--green-bg);
+    color: var(--green-icon);
+  }
+  
+  .heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  .queryBlock {
+    border-top: 2px solid var(--border-color);
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .queryTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .input {
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    border: 2px solid var(--border-color);
+    border-radius: 0.5rem;
+    background-color: var(--card-bg);
+    color: var(--card-text);
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+  .queryBlock select {
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    border: 2px solid var(--border-color);
+    border-radius: 0.5rem;
+    background-color: var(--card-bg);
+    color: var(--card-text);
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+  
+  input::placeholder {
+    color: var(--card-text);
+    opacity: 0.7;
+  }.actionButton {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--border-color);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+    margin-top: 0.5rem;
+  }
+  
+  /* Now extend for each specific button */
+  .insertButton {
+    background-color: var(--green-bg);
+    color: var(--green-icon);
+  }
+  
+  .updateButton {
+    background-color: var(--amber-bg);
+    color: var(--amber-icon);
+  }
+  
+  .deleteButton {
+    background-color: #fca5a5;
+    color: #b91c1c;
+  }
+  
+  .selectButton {
+    background-color: var(--blue-bg);
+    color: var(--blue-icon);
+  }
+  
+  .actionButton:hover {
+    box-shadow: 4px 4px 0 0 var(--shadow-color);
+  }

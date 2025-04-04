@@ -1,0 +1,78 @@
+
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcdebd;;
+}
+
+.card {
+  width: 90%;
+  max-width: 5000px;
+  height: 95vh;
+  background-image: url('/assets/animate-2.gif'); /* https://dribbble.com/shots/21421462-Pixel-Art-Galexy */
+  background-size: cover;
+  background-position: center;
+  border: 2px solid black;
+  box-shadow: 9px 9px 0 0 black;
+  transition: box-shadow 0.2s ease;
+  border-radius: 1rem;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  overflow: hidden;
+  position: relative; 
+
+}
+
+.card:hover {
+  box-shadow: 14px 14px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.content {
+  position: absolute;
+  left: 66.66%; 
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30%; 
+  color: white;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.content h1 {
+  font-size: 6rem;
+  font-weight: normal;
+  margin: 0;
+  color:  #b48551;
+  text-shadow: 6px 6px #4e2a00;
+}
+
+.content p {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  color: #fcdebd;
+}
+
+.buttonContainer {
+  margin-top: 1rem;
+}
+
+.button {
+  background-color: #733e01;
+  border: 5px solid #4e2a00;
+
+  color: #fcdebd;
+  padding: 20px 45px;
+  font-size: 3rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
